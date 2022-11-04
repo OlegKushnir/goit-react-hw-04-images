@@ -52,8 +52,7 @@ export const App = () => {
       setStatus('rejected');
       setError(er.message);
       throw new Error();
-    } 
-
+    }
   }
 
   const closeImage = e => {
