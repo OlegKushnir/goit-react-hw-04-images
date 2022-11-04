@@ -51,6 +51,7 @@ export const App = () => {
     } catch (er) {
       setStatus('rejected');
       setError(er.message);
+      console.log(error);
       throw new Error();
     }
   }

@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import css from './Modal.module.css';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 export const Modal = ({ largeImageURL, closeImage, closeOnEscape }) => {
-  const handleKeyDown = e => {
-    if (e.code === 'Escape') closeOnEscape();
-  };
-  useEffect(() => {
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  // const handleKeyDown = e => {
+  //   if (e.code === 'Escape') closeOnEscape();
+  // };
+  // useEffect(() => {
+  //   window.addEventListener('keydown', handleKeyDown);
+  //   return () => window.removeEventListener('keydown', handleKeyDown);
+  // }, []);
 
   return (
     <div className={css.overlay} onClick={e => closeImage(e)}>
