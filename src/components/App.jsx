@@ -68,6 +68,7 @@ export const App = () => {
     if (query) {
       fetchImages(query, page);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query, page]);
 
   useEffect(() => {
@@ -76,6 +77,7 @@ export const App = () => {
       top: window.innerHeight -144,
       behavior: 'smooth',
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [status]);
 
   return (
